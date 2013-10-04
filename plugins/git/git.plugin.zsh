@@ -1,4 +1,5 @@
 # Aliases
+: <<- DISABLED
 alias g='git'
 compdef g=git
 alias gst='git status'
@@ -79,8 +80,10 @@ alias gm='git merge'
 compdef _git gm=git-merge
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
-# alias gclean='git reset --hard && git clean -dfx'
-# alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
+alias gclean='git reset --hard && git clean -dfx'
+alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
+DISABLED
+
 
 # Sign and verify commits with GPG
 alias gcs='git commit -S'
