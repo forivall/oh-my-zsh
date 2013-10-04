@@ -1,0 +1,1 @@
+../../.oh-my-zsh-extras/zsh-pure/pure.zsh-theme
