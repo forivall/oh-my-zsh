@@ -40,6 +40,7 @@ _git-flow ()
 
 			local -a subcommands
 			subcommands=(
+				'status:Show some status.'
 				'init:Initialize a new git repo with support for the branching model.'
 				'feature:Manage your feature branches.'
 				'release:Manage your release branches.'
