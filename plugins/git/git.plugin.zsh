@@ -58,8 +58,8 @@ alias gbr='git branch --remote'
 alias gcount='git shortlog -sn'
 compdef gcount=git
 alias gcl='git config --list'
-alias gcp='git cherry-pick'
-compdef _git gcp=git-cherry-pick
+# alias gcp='git cherry-pick'
+# compdef _git gcp=git-cherry-pick
 alias glg='git log --stat --max-count=10'
 compdef _git glg=git-log
 alias glgg='git log --graph --max-count=10'
@@ -79,8 +79,8 @@ alias gm='git merge'
 compdef _git gm=git-merge
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
-alias gclean='git reset --hard && git clean -dfx'
-alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
+# alias gclean='git reset --hard && git clean -dfx'
+# alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 
 # Sign and verify commits with GPG
 alias gcs='git commit -S'
@@ -101,8 +101,8 @@ alias gpoat='git push origin --all && git push origin --tags'
 alias gmt='git mergetool --no-prompt'
 compdef _git gm=git-mergetool
 
-alias gg='git gui citool'
-alias gga='git gui citool --amend'
+# alias gg='git gui citool'
+# alias gga='git gui citool --amend'
 alias gk='gitk --all --branches'
 
 alias gsts='git stash show --text'
