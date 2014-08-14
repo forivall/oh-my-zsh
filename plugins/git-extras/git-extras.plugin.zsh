@@ -78,7 +78,7 @@ __git_bug_branch_names() {
 __git_submodule_names() {
     local expl
     declare -a submodule_names
-    submodule_names=(${(f)"$(_call_program branchrefs git submodule status | awk '{print $2}')"})
+    submodule_names=(${(f)"$(_call_program branchrefs git submodule status | awk '{print $2}')"})  #'
     __git_command_successful || return
     _wanted submodule-names expl submodule-name compadd $* - $submodule_names
 }
