@@ -12,8 +12,10 @@ alias gdt='git diff-tree --no-commit-id --name-only -r'
 compdef _git gdc=git diff-tree --no-commit-id --name-only -r
 alias gl='git pull'
 compdef _git gl=git-pull
+DISABLED
 alias gup='git pull --rebase'
 compdef _git gup=git-fetch
+: <<- DISABLED
 alias gp='git push'
 compdef _git gp=git-push
 alias gd='git diff'
@@ -73,9 +75,11 @@ alias glog='git log --oneline --decorate --color --graph'
 compdef _git glog=git-log
 alias gss='git status -s'
 compdef _git gss=git-status
+DISABLED
 alias ga='git add'
 compdef _git ga=git-add
 alias gap='git add --patch'
+: <<- DISABLED
 alias gm='git merge'
 compdef _git gm=git-merge
 alias grh='git reset HEAD'

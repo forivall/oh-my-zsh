@@ -21,8 +21,9 @@
 #
 
 #Alias
-alias gf='git flow'
+# alias gf='git flow'
 alias gcd='git checkout develop'
+alias gcm='git checkout master'
 alias gch='git checkout hotfix'
 alias gcr='git checkout release'
 
